@@ -113,6 +113,7 @@ resource "aws_eip" "hashicat" {
   vpc      = true
   tags = {
     Department = "devops"
+    Billable   = "true"
   }
 }
 
