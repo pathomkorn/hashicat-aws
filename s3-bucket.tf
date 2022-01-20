@@ -3,3 +3,7 @@ module "s3-bucket" {
   version       = "2.2.0"
   bucket_prefix = var.prefix
 }
+
+output "s3-bucket-arn" {
+  value = module.s3-bucket.s3_bucket_arn
+}
